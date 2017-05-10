@@ -13,7 +13,6 @@ RSpec.feature 'User can log in with Github' do
       OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({provider: 'github', uid: '1234', info: {nickname: 'student', name: 'John', image: 'url'}, credentials: {token: 'lasagna'}})
     end
 
-
     scenario 'The user clicks login on root path' do
       visit '/'
 
