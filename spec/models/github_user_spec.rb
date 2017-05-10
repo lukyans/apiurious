@@ -7,7 +7,7 @@ describe GithubUser do
       token = ENV["github_user_token"]
    
       github_user = GithubUser.find_by(token)
-      
+     
       expect(github_user.name).to eq("Sergey")
       expect(github_user.login).to eq("lukyans")
     end
