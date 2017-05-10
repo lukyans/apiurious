@@ -1,8 +1,12 @@
 <% if current_user %>
-
   Hello, <%= current_user.nickname %><br>
   <%= image_tag current_user.avatar %><br>
-  <%= link_to "Logout", logout_path, method: :delete %>
+  <%= link_to "Logout", logout_path, method: :delete %><br>
+
+Github User login:
+<%= @github_user.login %>
+
+
 <% else %>
   <%= link_to "Sign in with GitHub", "http://github.com/login/oauth/authorize?client_id=1afd6b8a50921df8ba05&scope=repo" %>
 <% end %>
