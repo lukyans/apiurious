@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Wed, 10 May 2017 22:05:59 GMT
+      - Thu, 11 May 2017 17:53:05 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -31,9 +31,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '5000'
       X-Ratelimit-Remaining:
-      - '4996'
+      - '4989'
       X-Ratelimit-Reset:
-      - '1494456783'
+      - '1494525573'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
@@ -67,12 +67,12 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - 6694d697f15dfc31f0ffaf8cdb1d5a86
+      - 62cdcc2d03a2f173f1c58590d1a90077
       X-Github-Request-Id:
-      - CCF3:3FFB:7545473:920E070:59138EC7
+      - DAC1:3FFB:81C7A68:A196D03:5914A500
     body:
       encoding: ASCII-8BIT
       string: '{"login":"lukyans","id":20569018,"avatar_url":"https://avatars1.githubusercontent.com/u/20569018?v=3","gravatar_id":"","url":"https://api.github.com/users/lukyans","html_url":"https://github.com/lukyans","followers_url":"https://api.github.com/users/lukyans/followers","following_url":"https://api.github.com/users/lukyans/following{/other_user}","gists_url":"https://api.github.com/users/lukyans/gists{/gist_id}","starred_url":"https://api.github.com/users/lukyans/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/lukyans/subscriptions","organizations_url":"https://api.github.com/users/lukyans/orgs","repos_url":"https://api.github.com/users/lukyans/repos","events_url":"https://api.github.com/users/lukyans/events{/privacy}","received_events_url":"https://api.github.com/users/lukyans/received_events","type":"User","site_admin":false,"name":"Sergey","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"public_repos":33,"public_gists":10,"followers":3,"following":0,"created_at":"2016-07-21T01:41:08Z","updated_at":"2017-05-09T19:59:15Z"}'
     http_version: 
-  recorded_at: Wed, 10 May 2017 22:05:59 GMT
+  recorded_at: Thu, 11 May 2017 17:53:05 GMT
 recorded_with: VCR 3.0.3

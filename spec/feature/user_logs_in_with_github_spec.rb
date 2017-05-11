@@ -21,7 +21,8 @@ RSpec.feature 'User can log in with Github' do
       visit github_login_url
 
       expect(page).to have_current_path('/')
-      expect(page.body).to have_content 'Hello, student'
+      expect(page.body).to have_content 'John'
+      expect(page.body).to have_content 'student'
       expect(page.body).to have_link 'Logout'
     end
   end

@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/user/followers?access_token=<GITHUB_API_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.11.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 11 May 2017 17:53:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4988'
+      X-Ratelimit-Reset:
+      - '1494525573'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - W/"1dec881748d1a6dd658f7633bcea947c"
+      X-Oauth-Scopes:
+      - repo
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - 1afd6b8a50921df8ba05
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - 7f48e2f7761567e923121f17538d7a6d
+      X-Github-Request-Id:
+      - DAC2:4005:7E2AFA9:9D213F0:5914A501
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"login":"NicholasJacques","id":20036943,"avatar_url":"https://avatars3.githubusercontent.com/u/20036943?v=3","gravatar_id":"","url":"https://api.github.com/users/NicholasJacques","html_url":"https://github.com/NicholasJacques","followers_url":"https://api.github.com/users/NicholasJacques/followers","following_url":"https://api.github.com/users/NicholasJacques/following{/other_user}","gists_url":"https://api.github.com/users/NicholasJacques/gists{/gist_id}","starred_url":"https://api.github.com/users/NicholasJacques/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/NicholasJacques/subscriptions","organizations_url":"https://api.github.com/users/NicholasJacques/orgs","repos_url":"https://api.github.com/users/NicholasJacques/repos","events_url":"https://api.github.com/users/NicholasJacques/events{/privacy}","received_events_url":"https://api.github.com/users/NicholasJacques/received_events","type":"User","site_admin":false},{"login":"vanegomez","id":10290117,"avatar_url":"https://avatars3.githubusercontent.com/u/10290117?v=3","gravatar_id":"","url":"https://api.github.com/users/vanegomez","html_url":"https://github.com/vanegomez","followers_url":"https://api.github.com/users/vanegomez/followers","following_url":"https://api.github.com/users/vanegomez/following{/other_user}","gists_url":"https://api.github.com/users/vanegomez/gists{/gist_id}","starred_url":"https://api.github.com/users/vanegomez/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/vanegomez/subscriptions","organizations_url":"https://api.github.com/users/vanegomez/orgs","repos_url":"https://api.github.com/users/vanegomez/repos","events_url":"https://api.github.com/users/vanegomez/events{/privacy}","received_events_url":"https://api.github.com/users/vanegomez/received_events","type":"User","site_admin":false},{"login":"NessEFC","id":22826692,"avatar_url":"https://avatars2.githubusercontent.com/u/22826692?v=3","gravatar_id":"","url":"https://api.github.com/users/NessEFC","html_url":"https://github.com/NessEFC","followers_url":"https://api.github.com/users/NessEFC/followers","following_url":"https://api.github.com/users/NessEFC/following{/other_user}","gists_url":"https://api.github.com/users/NessEFC/gists{/gist_id}","starred_url":"https://api.github.com/users/NessEFC/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/NessEFC/subscriptions","organizations_url":"https://api.github.com/users/NessEFC/orgs","repos_url":"https://api.github.com/users/NessEFC/repos","events_url":"https://api.github.com/users/NessEFC/events{/privacy}","received_events_url":"https://api.github.com/users/NessEFC/received_events","type":"User","site_admin":false}]'
+    http_version: 
+  recorded_at: Thu, 11 May 2017 17:53:05 GMT
+recorded_with: VCR 3.0.3
