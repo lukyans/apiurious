@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.feature 'User can log in with Github' do
   context 'An existing user has valid credentials' do
-
+    
     before do
       Capybara.app = Apicurious::Application
       stub_oauth
@@ -14,16 +14,18 @@ RSpec.feature 'User can log in with Github' do
     end
 
     scenario 'The user clicks login on root path' do
-      visit '/'
+      VCR.use_cassette("github_user_logs_in") do
+        visit '/'
 
-      expect(page.status_code).to eq 200
+        expect(page.status_code).to eq 200
 
-      visit github_login_url
+        visit github_login_url
 
-      expect(page).to have_current_path('/')
-      expect(page.body).to have_content 'John'
-      expect(page.body).to have_content 'student'
-      expect(page.body).to have_link 'Logout'
+        expect(page).to have_current_path('/dashboard')
+        expect(page.body).to have_content 'John'
+        expect(page.body).to have_content 'student'
+        expect(page.body).to have_link 'Logout'
+      end
     end
   end
 end

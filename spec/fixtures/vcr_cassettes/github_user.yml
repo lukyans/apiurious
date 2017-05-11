@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Thu, 11 May 2017 17:53:04 GMT
+      - Thu, 11 May 2017 21:49:46 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -33,7 +33,7 @@ http_interactions:
       X-Ratelimit-Remaining:
       - '4990'
       X-Ratelimit-Reset:
-      - '1494525573'
+      - '1494541649'
       Cache-Control:
       - private, max-age=60, s-maxage=60
       Vary:
@@ -67,12 +67,12 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Served-By:
-      - 2d7a5e35115884240089368322196939
+      - c6c65e5196703428e7641f7d1e9bc353
       X-Github-Request-Id:
-      - DAC0:3FF6:54555D7:68ED80C:5914A500
+      - E230:4005:8144D0B:A0DCCF9:5914DC7A
     body:
       encoding: ASCII-8BIT
       string: '{"login":"lukyans","id":20569018,"avatar_url":"https://avatars1.githubusercontent.com/u/20569018?v=3","gravatar_id":"","url":"https://api.github.com/users/lukyans","html_url":"https://github.com/lukyans","followers_url":"https://api.github.com/users/lukyans/followers","following_url":"https://api.github.com/users/lukyans/following{/other_user}","gists_url":"https://api.github.com/users/lukyans/gists{/gist_id}","starred_url":"https://api.github.com/users/lukyans/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/lukyans/subscriptions","organizations_url":"https://api.github.com/users/lukyans/orgs","repos_url":"https://api.github.com/users/lukyans/repos","events_url":"https://api.github.com/users/lukyans/events{/privacy}","received_events_url":"https://api.github.com/users/lukyans/received_events","type":"User","site_admin":false,"name":"Sergey","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"public_repos":33,"public_gists":10,"followers":3,"following":0,"created_at":"2016-07-21T01:41:08Z","updated_at":"2017-05-09T19:59:15Z"}'
     http_version: 
-  recorded_at: Thu, 11 May 2017 17:53:04 GMT
+  recorded_at: Thu, 11 May 2017 21:49:46 GMT
 recorded_with: VCR 3.0.3
