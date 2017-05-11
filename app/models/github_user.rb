@@ -4,10 +4,10 @@ class GithubUser
 
   def self.find_by(token)
     response = GithubService.find_user(token)
-    body = JSON.parse(response.env["body"])
+    # body = JSON.parse(response.env["body"])
     user = GithubUser.new
-    user.login = body['login']
-    user.name = body['name']
+    user.login = response['login']
+    user.name = response['name']
     user
   end
 end
