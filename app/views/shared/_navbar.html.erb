@@ -1,0 +1,42 @@
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <%= image_tag "GitHub-Mark-64px.png", height: '32', width: '32'%>
+    </div>
+  
+    <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+    </form>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Pull requests</a></li>
+        <li><a href="#">Issues</a></li>
+        <li><a href="#">Gist</a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">  
+        <% if !current_user %>
+          <li><%= link_to "Sign in with GitHub", "http://github.com/login/oauth/authorize?client_id=1afd6b8a50921df8ba05&scope=repo" %></li>
+        <% else %>
+          <li> <%= link_to "Logout", logout_path, method: :delete %></li>
+        <% end %>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= image_tag current_user.avatar, height: '20', width: '20'%> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
