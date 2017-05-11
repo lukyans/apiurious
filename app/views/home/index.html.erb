@@ -1,12 +1,21 @@
 <% if current_user %>
-  Hello, <%= current_user.nickname %><br>
-  <%= image_tag current_user.avatar %><br>
-  <%= link_to "Logout", logout_path, method: :delete %><br>
 
-Github User login:
-<%= @github_user.login %>
-
-
-<% else %>
-  <%= link_to "Sign in with GitHub", "http://github.com/login/oauth/authorize?client_id=1afd6b8a50921df8ba05&scope=repo" %>
+  <div class="row">
+    <div class="col-md-4">
+      <%= image_tag current_user.avatar, class: "img" %><br>
+      <h2><%= current_user.name %></h2>
+      <h3><%= current_user.nickname %></h3><br>
+      Add a bio
+  </div>
+  <div class="col-md-8">
+    <ul class="nav nav-pills">
+  <li role="presentation" class="disabled"><a href="#">Overview</a></li>
+  <li role="presentation" class="disabled"><a href="#">Repositories</a></li>
+  <li role="presentation" class="disabled"><a href="#">Stars</a></li>
+  <li role="presentation" class="disabled"><a href="#">Followers</a></li>
+  <li role="presentation" class="disabled"><a href="#">Folowing</a></li>
+</ul>
+  </div>
+</div>
 <% end %>
+

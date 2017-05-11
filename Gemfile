@@ -11,6 +11,8 @@ gem 'rails', '~> 5.0.2'
 gem "omniauth-github"
 gem 'figaro'
 gem 'faraday'
+gem 'bootstrap-sass'
+gem 'octicons_helper'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
