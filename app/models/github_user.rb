@@ -2,12 +2,19 @@ class GithubUser
 
   attr_accessor :login, :name
 
+  def initialize(attrs = {})
+    @attrs = attrs
+    @name = attrs["name"]
+    @login = attrs["login"]
+    @oauth_token = attrs['token']
+  end
+
   def self.find_by(token)
-    response = GithubService.find_user(token)
-    # body = JSON.parse(response.env["body"])
-    user = GithubUser.new
-    user.login = response['login']
-    user.name = response['name']
-    user
+    user = GithubService.find_user(token)
+    new(user)
+  end
+
+  def self.followers(token)
+    new(GithubService.followers(token))
   end
 end

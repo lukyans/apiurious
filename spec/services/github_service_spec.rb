@@ -18,6 +18,24 @@ describe GithubService do
         expect(github_user["avatar_url"]).to be_a(String)
       end
     end
+  end
+
+  context ".find github user's folowers" do
+    it "returns followers that belong to user" do
+      VCR.use_cassette("github_followers") do
+        token = ENV["github_user_token"]
+ 
+        github_followers = GithubService.followers(token)
+        github_follower = github_followers.first
+
+        expect(github_followers).to be_an(Array)
+        expect(github_followers.count).to eq(3)
+      
+        expect(github_follower).to be_a(Hash)
+        expect(github_follower).to have_key("login")
+        expect(github_follower["login"]).to be_a(String)
+      end
+    end
   end  
 end
 #we are not checking for specific value cause API is changing
